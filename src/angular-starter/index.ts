@@ -7,6 +7,7 @@ export function angularStarterSchematic(_options: any): Rule {
   return (tree: Tree, _context: SchematicContext) => {
     return chain([
       schematic('material', _options),
+      schematic('flex-layout', _options),
     ]);
     return tree;
   };
