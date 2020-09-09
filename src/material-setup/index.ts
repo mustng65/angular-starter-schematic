@@ -27,8 +27,8 @@ export function AddMaterial(_options: any): Rule {
       return hasDependency(tree, '@angular/material')
         ? noop()
         : externalSchematic('@angular/material', 'material-shell', {
-            theme: 'custom',
-            typography: true,
+            theme: '',
+            typography: false,
             animations: true,
           });
     };
