@@ -18,6 +18,10 @@
     "flex-layout": {
       "description": "Add the Flex Layout framework.",
       "factory": "./flex-layout-setup/index#AddMFlexLayout"
+    },
+    "navbar": {
+      "description": "Add a basic navbar component.",
+      "factory": "./navbar/index#CreateNavbar"
     }
   }
 }
