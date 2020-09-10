@@ -1,9 +1,27 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "angular-starter-schematic": {
-      "description": "A blank schematic.",
-      "factory": "./angular-starter-schematic/index#angularStarterSchematic"
+    "angular-starter": {
+      "description": "Add Angular Starter bits.",
+      "factory": "./angular-starter/index#angularStarterSchematic",
+      "schema": "./angular-starter/schema.json"
+    },
+    "ng-add": {
+      "factory": "./angular-starter/index#angularStarterSchematic",
+      "description": "Add schematic",
+      "schema": "./angular-starter/schema.json"
+    },
+    "material": {
+      "description": "Add the Angular Material framework.",
+      "factory": "./material-setup/index#AddMaterial"
+    },
+    "flex-layout": {
+      "description": "Add the Flex Layout framework.",
+      "factory": "./flex-layout-setup/index#AddMFlexLayout"
+    },
+    "navbar": {
+      "description": "Add a basic navbar component.",
+      "factory": "./navbar/index#CreateNavbar"
     }
   }
 }

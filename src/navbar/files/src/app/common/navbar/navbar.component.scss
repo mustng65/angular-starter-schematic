@@ -1,0 +1,23 @@
+@import '~@angular/material/theming';
+
+:host{
+    @include mat-elevation(6);
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+}
+
+.env-details{
+    margin-top: -12px;
+    font-size: 11px;
+    font-weight: normal;
+    opacity: .64;
+}
+
+.icon{
+    @include mat-elevation(2);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
